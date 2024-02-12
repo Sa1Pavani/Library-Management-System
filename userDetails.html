@@ -1,37 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="userDetails.css">
-    </script>
+    <meta charset="utf-8" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/userDetails.css" />
     <title>Library Management System</title>
   </head>
   <body>
-
+    <section id="sidebar">
+      <a href="#" class="brand">
+        <i class="bx bxs-smile"></i>
+        <span class="text">Library</span>
+      </a>
+      <ul class="side-menu top">
+        <li class="active">
+          <a href="Dashboard.html">
+            <i class="bx bxs-dashboard"></i>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="addBook.html" id="addBookLink">
+            <i class="bx bxs-bookmark-alt-plus"></i>
+            <span class="text">Add Book</span>
+          </a>
+        </li>
+        <!-- <li>
+          <a href="#">
+            <i class="bx bxs-bookmark-alt-minus"></i>
+            <span class="text">Delete Book</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-edit"></i>
+            <span class="text">Edit Book Details</span>
+          </a>
+        </li> -->
+        <li>
+          <a href="userDetails.html">
+            <i class="bx bxs-user-pin"></i>
+            <span class="text">User Details</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-user-pin"></i>
+            <span class="text">Return Books</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-user-pin"></i>
+            <span class="text">Borrowed list</span>
+          </a>
+        </li>
+      </ul>
+      <!-- <ul class="side-menu">
+        <li>
+          <a href="#" class="logout">
+            <i class="bx bxs-log-out"></i>
+            <span class="text">Logout</span>
+          </a>
+        </li>
+      </ul> -->
+    </section>
     <h1 id="title">User Details</h1>
-    
-    <form id="user-details" action="">
 
+    <form id="user-details" action="">
       <label id="details" for="user_name">User Name:</label>
-      <input id="user_name" type="text" placeholder="Enter user name" required>
+      <input
+        id="user_name"
+        type="text"
+        placeholder="Enter user name"
+        required
+      />
 
       <label id="details" for="phone_number">Phone Number:</label>
-      <input id="phone_number" type="text" placeholder="Enter phone number" required>
+      <input
+        id="phone_number"
+        type="text"
+        placeholder="Enter phone number"
+        required
+      />
 
       <label id="details" for="book_name">Book:</label>
-      <input id="book_name" type="text" placeholder="Enter book name" required>
+      <input
+        id="book_name"
+        type="text"
+        placeholder="Enter book name"
+        required
+      />
 
       <label id="details" for="date_taken">Date Taken:</label>
-      <input id="date_taken" type="date" required>
+      <input id="date_taken" type="date" required />
 
       <label id="details" for="return_date">Return Date:</label>
-      <input id="return_date" type="date" required>
+      <input id="return_date" type="date" required />
 
       <label id="details" for="fine">Fine:</label>
-      <input id="fine" type="text" placeholder="Enter fine amount">
+      <input id="fine" type="text" placeholder="Enter fine amount" />
 
       <button id="submit">Submit</button>
     </form>
-    
+    <script src="userDetails.js"></script>
   </body>
 </html>
